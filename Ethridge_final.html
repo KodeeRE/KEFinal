@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="EthridgeFinal.css">
+    <script defer src="Ethridgefinal.js"></script>
+</head>
+<body>
+    <div id="banner">
+        <h1>Kodee Ethridge WEB115.0002</h1>
+        <h2>Creating a meal plan</h2>
+    </div>
+
+    <!-- Form Section -->
+    <form id="mealPlanForm">
+        <!-- Personal Information -->
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Enter your email: </label>
+        <input type="email" id="email" required>
+
+        <label for="goal">Weekly goal:</label>
+        <textarea id="goal" rows="3"></textarea>
+
+        <!-- Meal Plan Input -->
+        <h2>Meal Plan for the Week</h2>
+
+        <label for="meal1">Breakfast:</label>
+        <input type="text" id="meal1">
+
+        <!-- Create Buttons -->
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        <button type="button" onclick="clearMealPlan()">Clear Meal Plan</button>
+        <button type="button" onclick="printOrDownload()">Print/Download Planner</button>
+    </form>
+</body>
+</html>
